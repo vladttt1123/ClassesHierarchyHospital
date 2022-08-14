@@ -16,6 +16,7 @@ public class Log4J {
         logger.fatal("This is fatal  error message");
 
         System.out.println("Completed");
+        System.out.println("Completed");
 
     }
 }
