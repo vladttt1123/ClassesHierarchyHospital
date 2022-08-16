@@ -14,7 +14,6 @@ public abstract class Doctor extends  Employee{
         this.setNumberOfPatients(numberOfPatients);
     }
 
-    public abstract void examinePatient();
 
     public int getNumberOfPatients() {
         return numberOfPatients;
@@ -30,4 +29,6 @@ public abstract class Doctor extends  Employee{
         }
         this.numberOfPatients = numberOfPatients;
     }
+
+
 }

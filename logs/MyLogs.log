@@ -2,3 +2,179 @@
 [ERROR] 2022-08-13 20:48:11.431 [main] Log4J - This is an error message
 [WARN ] 2022-08-13 20:48:11.431 [main] Log4J - This is a warning message
 [FATAL] 2022-08-13 20:48:11.432 [main] Log4J - This is fatal  error message
+[INFO ] 2022-08-14 16:21:43.480 [main] Log4J - This is information message
+[INFO ] 2022-08-14 16:22:12.047 [main] Log4J - This is information message
+[INFO ] 2022-08-14 17:20:16.801 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-14 17:20:16.803 [main] Employee - Your total work experience is -2
+[INFO ] 2022-08-14 17:20:16.806 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-14 17:20:16.807 [main] Employee - Your jobid is 5
+[INFO ] 2022-08-14 17:20:16.807 [main] Employee - Your total work experience is 2
+[INFO ] 2022-08-14 17:20:16.808 [main] Employee - you pay per hours is 4500.0
+[INFO ] 2022-08-14 17:23:44.040 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-14 17:23:44.042 [main] Employee - Your total work experience is -2
+[ERROR] 2022-08-14 17:23:44.043 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-14 17:23:44.045 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-14 17:23:44.046 [main] Employee - Your jobid is 5
+[INFO ] 2022-08-14 17:23:44.046 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-14 17:23:44.046 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-14 17:23:44.047 [main] Employee - you pay per hours is 4500.0
+[INFO ] 2022-08-14 17:24:18.145 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-14 17:24:18.148 [main] Employee - Your total work experience is 3
+[ERROR] 2022-08-14 17:24:18.148 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-14 17:24:18.151 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-14 17:24:18.151 [main] Employee - Your jobid is 5
+[INFO ] 2022-08-14 17:24:18.151 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-14 17:24:18.151 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-14 17:24:18.152 [main] Employee - you pay per hours is 4500.0
+[INFO ] 2022-08-14 17:25:06.472 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-14 17:25:06.475 [main] Employee - Your total work experience is 3
+[ERROR] 2022-08-14 17:25:06.475 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-14 17:25:06.477 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-14 17:25:06.478 [main] Employee - Your jobid is 5
+[INFO ] 2022-08-14 17:25:06.478 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-14 17:25:06.478 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-14 17:25:06.478 [main] Employee - you pay per hours is 4500.0
+[INFO ] 2022-08-14 17:25:27.101 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-14 17:25:27.104 [main] Employee - Your total work experience is 3
+[ERROR] 2022-08-14 17:25:27.104 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-14 17:25:27.107 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-14 17:25:27.108 [main] Employee - Your jobid is 5
+[INFO ] 2022-08-14 17:25:27.108 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-14 17:25:27.108 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-14 17:25:27.108 [main] Employee - you pay per hours is 4500.0
+[INFO ] 2022-08-16 18:50:17.157 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-16 18:50:17.160 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-16 18:50:17.160 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:50:17.163 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-16 18:50:17.163 [main] Employee - Your jobid is 5643
+[INFO ] 2022-08-16 18:50:17.164 [main] Employee - Your total work experience is 25
+[ERROR] 2022-08-16 18:50:17.164 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:50:17.164 [main] Employee - you pay per hours is 15.0
+[INFO ] 2022-08-16 18:52:20.763 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-16 18:52:20.766 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-16 18:52:20.766 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:52:20.768 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-16 18:52:20.770 [main] Employee - Your jobid is 5643
+[INFO ] 2022-08-16 18:52:20.770 [main] Employee - Your total work experience is 25
+[ERROR] 2022-08-16 18:52:20.770 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:52:20.770 [main] Employee - you pay per hours is 15.0
+[INFO ] 2022-08-16 18:53:13.215 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-16 18:53:13.217 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-16 18:53:13.218 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:53:13.220 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-16 18:53:13.221 [main] Employee - Your jobid is 5643
+[INFO ] 2022-08-16 18:53:13.221 [main] Employee - Your total work experience is 25
+[ERROR] 2022-08-16 18:53:13.221 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:53:13.221 [main] Employee - you pay per hours is 15.0
+[INFO ] 2022-08-16 18:53:29.753 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-16 18:53:29.756 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-16 18:53:29.756 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:53:29.759 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-16 18:53:29.761 [main] Employee - Your jobid is 5643
+[INFO ] 2022-08-16 18:53:29.761 [main] Employee - Your total work experience is 25
+[ERROR] 2022-08-16 18:53:29.761 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:53:29.761 [main] Employee - you pay per hours is 15.0
+[INFO ] 2022-08-16 18:54:32.626 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-16 18:54:32.629 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-16 18:54:32.630 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:54:32.632 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-16 18:54:32.633 [main] Employee - Your jobid is 5643
+[INFO ] 2022-08-16 18:54:32.633 [main] Employee - Your total work experience is 25
+[ERROR] 2022-08-16 18:54:32.633 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:54:32.633 [main] Employee - you pay per hours is 15.0
+[INFO ] 2022-08-16 18:58:53.239 [main] Employee - Your jobid is 4234
+[INFO ] 2022-08-16 18:58:53.241 [main] Employee - Your total work experience is 21
+[ERROR] 2022-08-16 18:58:53.242 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:58:53.244 [main] Employee - you pay per hours is 45.0
+[INFO ] 2022-08-16 18:58:53.244 [main] Employee - Your jobid is 2
+[INFO ] 2022-08-16 18:58:53.244 [main] Employee - Your total work experience is 1
+[ERROR] 2022-08-16 18:58:53.244 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:58:53.244 [main] Employee - you pay per hours is 500.0
+[INFO ] 2022-08-16 18:58:53.245 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-16 18:58:53.245 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-16 18:58:53.245 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:58:53.245 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-16 18:58:53.246 [main] Employee - Your jobid is 5643
+[INFO ] 2022-08-16 18:58:53.246 [main] Employee - Your total work experience is 25
+[ERROR] 2022-08-16 18:58:53.246 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 18:58:53.246 [main] Employee - you pay per hours is 15.0
+[INFO ] 2022-08-16 19:01:40.058 [main] Employee - Your jobid is 4234
+[INFO ] 2022-08-16 19:01:40.061 [main] Employee - Your total work experience is 21
+[ERROR] 2022-08-16 19:01:40.061 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:01:40.064 [main] Employee - you pay per hours is 45.0
+[INFO ] 2022-08-16 19:01:40.064 [main] Employee - Your jobid is 2
+[INFO ] 2022-08-16 19:01:40.064 [main] Employee - Your total work experience is 1
+[ERROR] 2022-08-16 19:01:40.064 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:01:40.064 [main] Employee - you pay per hours is 500.0
+[INFO ] 2022-08-16 19:01:40.065 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-16 19:01:40.065 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-16 19:01:40.065 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:01:40.065 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-16 19:01:40.068 [main] Employee - Your jobid is 5643
+[INFO ] 2022-08-16 19:01:40.068 [main] Employee - Your total work experience is 25
+[ERROR] 2022-08-16 19:01:40.068 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:01:40.068 [main] Employee - you pay per hours is 15.0
+[INFO ] 2022-08-16 19:02:18.411 [main] Employee - Your jobid is 4234
+[INFO ] 2022-08-16 19:02:18.414 [main] Employee - Your total work experience is 21
+[ERROR] 2022-08-16 19:02:18.414 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:02:18.417 [main] Employee - you pay per hours is 45.0
+[INFO ] 2022-08-16 19:02:18.417 [main] Employee - Your jobid is 2
+[INFO ] 2022-08-16 19:02:18.417 [main] Employee - Your total work experience is 1
+[ERROR] 2022-08-16 19:02:18.417 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:02:18.418 [main] Employee - you pay per hours is 500.0
+[INFO ] 2022-08-16 19:02:18.418 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-16 19:02:18.418 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-16 19:02:18.418 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:02:18.419 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-16 19:02:18.420 [main] Employee - Your jobid is 5643
+[INFO ] 2022-08-16 19:02:18.420 [main] Employee - Your total work experience is 25
+[ERROR] 2022-08-16 19:02:18.420 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:02:18.420 [main] Employee - you pay per hours is 15.0
+[INFO ] 2022-08-16 19:03:04.583 [main] Employee - Your jobid is 4234
+[INFO ] 2022-08-16 19:03:04.586 [main] Employee - Your total work experience is 21
+[ERROR] 2022-08-16 19:03:04.586 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:03:04.589 [main] Employee - you pay per hours is 45.0
+[INFO ] 2022-08-16 19:03:04.589 [main] Employee - Your jobid is 2
+[INFO ] 2022-08-16 19:03:04.589 [main] Employee - Your total work experience is 1
+[ERROR] 2022-08-16 19:03:04.589 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:03:04.590 [main] Employee - you pay per hours is 500.0
+[INFO ] 2022-08-16 19:03:04.590 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-16 19:03:04.590 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-16 19:03:04.590 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:03:04.591 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-16 19:03:04.592 [main] Employee - Your jobid is 5643
+[INFO ] 2022-08-16 19:03:04.592 [main] Employee - Your total work experience is 25
+[ERROR] 2022-08-16 19:03:04.592 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:03:04.592 [main] Employee - you pay per hours is 15.0
+[INFO ] 2022-08-16 19:03:29.968 [main] Employee - Your jobid is 4234
+[INFO ] 2022-08-16 19:03:29.971 [main] Employee - Your total work experience is 21
+[ERROR] 2022-08-16 19:03:29.971 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:03:29.975 [main] Employee - you pay per hours is 45.0
+[INFO ] 2022-08-16 19:03:29.975 [main] Employee - Your jobid is 2
+[INFO ] 2022-08-16 19:03:29.975 [main] Employee - Your total work experience is 1
+[ERROR] 2022-08-16 19:03:29.975 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:03:29.976 [main] Employee - you pay per hours is 500.0
+[INFO ] 2022-08-16 19:03:29.976 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-16 19:03:29.977 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-16 19:03:29.977 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:03:29.977 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-16 19:03:29.978 [main] Employee - Your jobid is 5643
+[INFO ] 2022-08-16 19:03:29.979 [main] Employee - Your total work experience is 25
+[ERROR] 2022-08-16 19:03:29.979 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:03:29.979 [main] Employee - you pay per hours is 15.0
+[INFO ] 2022-08-16 19:04:23.775 [main] Employee - Your jobid is 4234
+[INFO ] 2022-08-16 19:04:23.777 [main] Employee - Your total work experience is 21
+[ERROR] 2022-08-16 19:04:23.777 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:04:23.780 [main] Employee - you pay per hours is 45.0
+[INFO ] 2022-08-16 19:04:23.780 [main] Employee - Your jobid is 2
+[INFO ] 2022-08-16 19:04:23.780 [main] Employee - Your total work experience is 1
+[ERROR] 2022-08-16 19:04:23.780 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:04:23.780 [main] Employee - you pay per hours is 500.0
+[INFO ] 2022-08-16 19:04:23.781 [main] Employee - Your jobid is 1
+[INFO ] 2022-08-16 19:04:23.781 [main] Employee - Your total work experience is 2
+[ERROR] 2022-08-16 19:04:23.781 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:04:23.781 [main] Employee - you pay per hours is 1000.0
+[INFO ] 2022-08-16 19:04:23.783 [main] Employee - Your jobid is 5643
+[INFO ] 2022-08-16 19:04:23.783 [main] Employee - Your total work experience is 25
+[ERROR] 2022-08-16 19:04:23.783 [main] Employee - Your total experience can't be lower than 0
+[INFO ] 2022-08-16 19:04:23.783 [main] Employee - you pay per hours is 15.0

@@ -2,8 +2,9 @@ package solvd_02.hospital.employees;
 
 import solvd_02.hospital.exceptions.InvalidAgeException;
 import solvd_02.hospital.exceptions.InvalidYearsWorkedException;
+import solvd_02.hospital.interfaces.IExaminePatient;
 
-public class OperationalNurse extends Nurse{
+public class OperationalNurse extends Nurse implements IExaminePatient {
 
     //make the lsit of patients
 
@@ -36,11 +37,12 @@ public class OperationalNurse extends Nurse{
 
     @Override
     public void work() {
-        //to implement
+        System.out.println("Operational Nurse is working ");
     }
 
+
     @Override
-    public void takeCareOfPatient() {
-        //to implement
+    public void examinePatient(Patient patient) {
+        System.out.println("Patient "+ patient.getName() + " is being examined by Operational Nurse ");
     }
 }

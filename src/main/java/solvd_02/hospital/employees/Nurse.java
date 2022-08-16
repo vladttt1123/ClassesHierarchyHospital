@@ -19,8 +19,11 @@ public abstract class Nurse extends  Employee{
     public void setDepartmentName(String departmentName) {
         this.departmentName = departmentName;
     }
-    public abstract void takeCareOfPatient();
 
+
+    public void givePillsToThePatient(Patient patient) {
+
+    }
 
 
 }

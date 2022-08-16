@@ -1,9 +1,8 @@
 package solvd_02.hospital.employees;
 
-import solvd_02.hospital.exceptions.InvalidAgeException;
-import solvd_02.hospital.exceptions.InvalidYearsWorkedException;
+import solvd_02.hospital.interfaces.IExaminePatient;
 
-public class DoctorSurgeon extends Doctor{
+public class DoctorSurgeon extends Doctor implements IExaminePatient {
     private int operationsDone;
 
     public DoctorSurgeon(String name, int age,  int jobId, int yearsWorked, double salaryHourly, int numberOfPatients,
@@ -23,18 +22,19 @@ public class DoctorSurgeon extends Doctor{
 
 
 
-
     @Override
     public void work() {
         System.out.println("DoctorSurgeon is operating");
     }
 
-    @Override
-    public void examinePatient() {
-        System.out.println("DoctorSurgeon examines patient");
+
+
+    public void operate(Patient patient) {
+        System.out.println("Performing operation on "+  patient.getName());
     }
 
-    public void operate() {
-        System.out.println("Performing operation");
+    @Override
+    public void examinePatient(Patient patient) {
+        System.out.println("Patient"  + patient.getName() + " is being examined by Surgeon ");
     }
 }

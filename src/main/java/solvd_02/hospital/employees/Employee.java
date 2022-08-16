@@ -2,9 +2,13 @@ package solvd_02.hospital.employees;
 
 import solvd_02.hospital.exceptions.InvalidSalaryException;
 import solvd_02.hospital.exceptions.InvalidYearsWorkedException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 //comamnd shuft F
 public abstract class Employee extends Person{
+    protected static Logger logger = LogManager.getLogger(Employee.class);
+
 
 
     private int jobId;
@@ -16,8 +20,13 @@ public abstract class Employee extends Person{
     public Employee(String name, int age, int jobId, int yearsWorked, double salaryHourly)
     {
         super(name, age);
+        logger.info("Your jobid is "+ jobId);
         this.jobId = jobId;
+        logger.info("Your total work experience is " + yearsWorked);
+        logger.error("Your total experience can't be lower than 0");
         this.setYearsWorked(yearsWorked);
+        logger.info("you pay per hours is "+ salaryHourly);
+
         this.setSalaryHourly(salaryHourly);
     }
 

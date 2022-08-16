@@ -5,8 +5,8 @@ import org.apache.logging.log4j.Logger;
 
 public class Log4J {
 
-    static Logger logger = LogManager.getLogger(Log4J.class);
-    public static void main(String[] args) {
+    private static Logger logger = LogManager.getLogger(Log4J.class);
+    private static void main(String[] args) {
 
         System.out.println("Hello World");
 

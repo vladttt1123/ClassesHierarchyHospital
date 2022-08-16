@@ -1,11 +1,14 @@
 package solvd_02.hospital.employees;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import solvd_02.hospital.exceptions.InvalidAgeException;
 import solvd_02.hospital.exceptions.InvalidPatientIdException;
 
 import java.util.InputMismatchException;
 
 public class Patient extends Person {
+    protected static Logger logger = LogManager.getLogger(Patient.class);
     //class Data get time form the start of illness
 
     private int treatmentLength;
