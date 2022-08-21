@@ -1,13 +1,14 @@
 package solvd_02.hospital.employees;
 
+import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.interfaces.IExaminePatient;
 
 public class DoctorSurgeon extends Doctor implements IExaminePatient {
     private int operationsDone;
 
-    public DoctorSurgeon(String name, int age,  int jobId, int yearsWorked, double salaryHourly, int numberOfPatients,
-                         int operationsDone)   {
-        super(name, age, jobId, yearsWorked, salaryHourly, numberOfPatients);
+    public DoctorSurgeon(String name, int age, int yearsWorked, double salaryHourly, int numberOfPatients,
+                         int operationsDone,Specialty specialty)   {
+        super(name, age, yearsWorked, salaryHourly, numberOfPatients, specialty);
         this.operationsDone = operationsDone;
     }
 

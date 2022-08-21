@@ -1,5 +1,6 @@
 package solvd_02.hospital.employees;
 
+import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.interfaces.IExaminePatient;
 import solvd_02.hospital.interfaces.IManageEmployees;
 
@@ -8,10 +9,10 @@ public class NurseManager extends Nurse implements IManageEmployees, IExaminePat
 
     private int managedNurses;
 
-    public NurseManager(String name, int age, int jobId, int yearsWorked, double salaryHourly, String departmentName,
-                        int managedNurses)
+    public NurseManager(String name, int age, int yearsWorked, double salaryHourly, String departmentName,
+                        int managedNurses, Specialty specialty)
               {
-        super(name, age, jobId, yearsWorked, salaryHourly, departmentName);
+        super(name, age, yearsWorked, salaryHourly, departmentName, specialty);
         this.managedNurses = managedNurses;
     }
 
@@ -49,6 +50,6 @@ public class NurseManager extends Nurse implements IManageEmployees, IExaminePat
     @Override
     public void fireEmployee(Employee employee) {
         System.out.println("Operational Nurse " + employee.getName()
-                + " with jobId  "+  employee.getJobId() + " is fired by Nurse Manager ");
+                + " with jobId  "+ " is fired by Nurse Manager ");
     }
 }

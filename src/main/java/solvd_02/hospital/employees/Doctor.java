@@ -1,8 +1,7 @@
 package solvd_02.hospital.employees;
 
-import solvd_02.hospital.exceptions.InvalidAgeException;
+import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.exceptions.InvalidNumberOfPatientsException;
-import solvd_02.hospital.exceptions.InvalidYearsWorkedException;
 
 import java.util.List;
 
@@ -11,8 +10,9 @@ public abstract class Doctor extends  Employee {
 
     private int numberOfPatients;
 
-    public Doctor(String name, int age, int jobId, int yearsWorked, double salaryHourly, int numberOfPatients) {
-        super(name, age, jobId, yearsWorked, salaryHourly);
+    public Doctor(String name, int age, int yearsWorked, double salaryHourly, int numberOfPatients,
+                  Specialty specialty) {
+        super(name, age, yearsWorked, salaryHourly,specialty);
         this.setNumberOfPatients(numberOfPatients);
     }
 

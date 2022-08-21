@@ -1,19 +1,12 @@
 package solvd_02.hospital.employees;
 
-import solvd_02.hospital.enums.Diagnosis;
-import solvd_02.hospital.exceptions.InvalidAgeException;
+import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.exceptions.InvalidSalaryException;
-import solvd_02.hospital.exceptions.InvalidYearsWorkedException;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
-
-import static solvd_02.hospital.employees.Doctor.getListOfDoctors;
-import static solvd_02.hospital.employees.Employee.getListOfEmployees;
-import static solvd_02.hospital.employees.Patient.getListOfPatients;
-import static solvd_02.hospital.employees.ServiceAccounting.calculateSalary;
 
 public class Program {
     public static void main(String[] args) throws InvalidSalaryException {
@@ -76,16 +69,16 @@ public class Program {
 //        listOfPatients.add(new Patient("Igor", 29, 10,
 //                "HEADACHE", true, 123));
 
-
-        List<Employee> listOfEmployees = new ArrayList<>();
-        listOfEmployees.add(new DoctorFamily("Bob Johnson",49, 8736, 3,
-                765, 10));
-        listOfEmployees.add(new OperationalNurse("Clara", 25, 873, 3,
-                                                                    450, "test",
-                                                                        20));
-
-        listOfEmployees.add(new ServiceSecurity("Ken", 25, 478, 39, 35,
-                "security"));
+//
+//        List<Employee> listOfEmployees = new ArrayList<>();
+//        listOfEmployees.add(new DoctorFamily("Bob Johnson",49, 8736, 3,
+//                765, 10));
+//        listOfEmployees.add(new OperationalNurse("Clara", 25, 873, 3,
+//                                                                    450, "test",
+//                                                                        20, Specialty.NURSE));
+//
+//        listOfEmployees.add(new ServiceSecurity("Ken", 25, 478, 39, 35,
+//                "security"));
 
 
 
@@ -93,7 +86,36 @@ public class Program {
 //
 //        getListOfDoctors(listOfDoctors);
 
-        getListOfEmployees(listOfEmployees);
+//        getListOfEmployees(listOfEmployees);
+
+        //returns list of ALL employees
+        List<Employee> employees = Employee.getListEmployees();
+        //Employee.printEmployees(employees);
+
+        //returns list of Employees based on Specialty ( Doctor )
+        List<Employee> doctors = Employee.filterBySpecialty(employees, Specialty.DOCTOR);
+        //Employee.printEmployees(doctors);
+
+        //returns list of Employees based on Specialty ( Nurse )
+        List<Employee> nurses = Employee.filterBySpecialty(employees, Specialty.NURSE);
+        //Employee.printEmployees(nurses);
+
+
+        //Employee with MAX Salary
+        Employee withMaxSalary = Employee.findWithMaxSalary(employees);
+        System.out.println("Employee with the biggest salary is " + withMaxSalary);
+
+
+        //Employee with Min Salary
+        Employee withMinSalary = Employee.findWithMinSalary(employees);
+        System.out.println("Employee with the smallest salary is " + withMinSalary);
+
+        Map<Specialty, List<Employee>> groupedBySpecialty = Employee.groupBySpecialty(employees);
+        System.out.println(groupedBySpecialty);
+
+
+
+
 
 
 

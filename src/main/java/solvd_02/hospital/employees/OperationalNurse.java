@@ -1,7 +1,6 @@
 package solvd_02.hospital.employees;
 
-import solvd_02.hospital.exceptions.InvalidAgeException;
-import solvd_02.hospital.exceptions.InvalidYearsWorkedException;
+import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.interfaces.IExaminePatient;
 
 public class OperationalNurse extends Nurse implements IExaminePatient {
@@ -10,10 +9,10 @@ public class OperationalNurse extends Nurse implements IExaminePatient {
 
     private int numberOfPatients;
 
-    public OperationalNurse(String name, int age, int jobId, int yearsWorked, double salaryHourly, String departmentName,
-                            int numberOfPatients)
+    public OperationalNurse(String name, int age, int yearsWorked, double salaryHourly, String departmentName,
+                            int numberOfPatients,Specialty specialty)
               {
-        super(name, age, jobId, yearsWorked, salaryHourly, departmentName);
+        super(name, age, yearsWorked, salaryHourly, departmentName, specialty);
         this.numberOfPatients = numberOfPatients;
     }
 
@@ -29,7 +28,10 @@ public class OperationalNurse extends Nurse implements IExaminePatient {
 
     @Override
     public String toString() {
-        return "OperationalNurse {" + "name= " + getName() + ", department " + getDepartmentName() +
+        return "OperationalNurse {" + "name= " + getName() +
+                " age " + getAge() +
+                "salaryHourly " + getSalaryHourly() +
+                ", department " + getDepartmentName() +
                 " " +  ",numberOfPatients=" + numberOfPatients +
                 '}';
     }

@@ -5,17 +5,20 @@ import solvd_02.hospital.enums.Diagnosis;
 import static solvd_02.hospital.enums.Diagnosis.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.interfaces.IExaminePatient;
 
 
 public class DoctorFamily extends Doctor implements IExaminePatient {
     private static Logger logger = LogManager.getLogger(DoctorFamily.class);
 
-    public DoctorFamily(String name, int age, int jobId, int yearsWorked,
-                        double salaryHourly, int numberOfPatients)
+
+    public DoctorFamily(String name, int age, int yearsWorked,
+                        double salaryHourly, int numberOfPatients, Specialty specialty)
               {
-        super(name, age, jobId, yearsWorked, salaryHourly, numberOfPatients);
-    }
+        super(name, age, yearsWorked, salaryHourly, numberOfPatients, specialty);
+
+              }
 
 
     @Override
@@ -42,6 +45,7 @@ public class DoctorFamily extends Doctor implements IExaminePatient {
     @Override
     public String toString() {
         return "DoctorFamily{"+ "name= " + getName() + ", age= " + getAge() + ", " +
-                "number of patients " + getNumberOfPatients() + " }";
+                "salaryHourly " + getSalaryHourly() +
+                " number of patients= " + getNumberOfPatients() + " }";
     }
 }
