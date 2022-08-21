@@ -29,8 +29,8 @@ public class OperationalNurse extends Nurse implements IExaminePatient {
 
     @Override
     public String toString() {
-        return "OperationalNurse{" +
-                "numberOfPatients=" + numberOfPatients +
+        return "OperationalNurse {" + "name= " + getName() + ", department " + getDepartmentName() +
+                " " +  ",numberOfPatients=" + numberOfPatients +
                 '}';
     }
 

@@ -6,6 +6,7 @@ import solvd_02.hospital.exceptions.InvalidAgeException;
 import solvd_02.hospital.exceptions.InvalidPatientIdException;
 
 import java.util.InputMismatchException;
+import java.util.List;
 
 public class Patient extends Person {
     protected static Logger logger = LogManager.getLogger(Patient.class);
@@ -63,5 +64,25 @@ public class Patient extends Person {
             }
             this.patientId = patientId;
         }
+
+
+    }
+
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "name= " + getName() + " "+
+                "treatmentLength=" + treatmentLength + " days " +
+                ", diagnosis='" + diagnosis + '\'' +
+                ", isTreatedInHospital=" + isTreatedInHospital +
+                ", patientId=" + patientId +
+                '}';
+    }
+
+    public static void getListOfPatients(List<Patient> list){
+        for (Patient patient: list) {
+            System.out.println(patient);
+        }
+
     }
 }

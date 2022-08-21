@@ -4,12 +4,14 @@ import solvd_02.hospital.exceptions.InvalidAgeException;
 import solvd_02.hospital.exceptions.InvalidNumberOfPatientsException;
 import solvd_02.hospital.exceptions.InvalidYearsWorkedException;
 
+import java.util.List;
+
 // all enums to separate folder
-public abstract class Doctor extends  Employee{
+public abstract class Doctor extends  Employee {
 
     private int numberOfPatients;
 
-    public Doctor(String name, int age,  int jobId, int yearsWorked, double salaryHourly, int numberOfPatients) {
+    public Doctor(String name, int age, int jobId, int yearsWorked, double salaryHourly, int numberOfPatients) {
         super(name, age, jobId, yearsWorked, salaryHourly);
         this.setNumberOfPatients(numberOfPatients);
     }
@@ -20,7 +22,7 @@ public abstract class Doctor extends  Employee{
     }
 
     public void setNumberOfPatients(int numberOfPatients) {
-        if(numberOfPatients < 0){
+        if (numberOfPatients < 0) {
             try {
                 throw new InvalidNumberOfPatientsException("Can't be smaller than 0, Please enter valid information");
             } catch (InvalidNumberOfPatientsException e) {
@@ -28,6 +30,20 @@ public abstract class Doctor extends  Employee{
             }
         }
         this.numberOfPatients = numberOfPatients;
+    }
+
+    @Override
+    public String toString() {
+        return "Name {" + getName() + " age " + getAge() +
+                " numberOfPatients  " + numberOfPatients +
+                '}';
+    }
+
+    public static void getListOfDoctors(List<Doctor> list) {
+        for (Doctor doctor : list) {
+            System.out.println(doctor);
+        }
+
     }
 
 

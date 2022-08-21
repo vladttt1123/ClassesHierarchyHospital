@@ -19,4 +19,10 @@ public class ServiceSecurity extends Service{
     public void protect(){
         //to implement
     }
+
+    @Override
+    public String toString() {
+        return "ServiceSecurity {" + "name= " + getName() + ", yearsOfExperience " + getYearsWorked() +
+                ", department name " + getDepartmentName() + "}";
+    }
 }
