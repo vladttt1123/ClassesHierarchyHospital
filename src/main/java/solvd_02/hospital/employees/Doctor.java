@@ -39,12 +39,8 @@ public abstract class Doctor extends  Employee {
                 '}';
     }
 
-    public static void getListOfDoctors(List<Doctor> list) {
-        for (Doctor doctor : list) {
-            System.out.println(doctor);
-        }
+
 
     }
 
 
-}

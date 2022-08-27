@@ -16,4 +16,12 @@ public class Ward extends Room{
     public void setNumberBeds(int numberBeds) {
         this.numberBeds = numberBeds;
     }
+
+
+    @Override
+    public String toString() {
+        return "Ward{" +
+                "numberBeds=" + numberBeds +
+                '}';
+    }
 }

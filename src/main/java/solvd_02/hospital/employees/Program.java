@@ -2,10 +2,12 @@ package solvd_02.hospital.employees;
 
 import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.exceptions.InvalidSalaryException;
+import solvd_02.hospital.rooms.Ward;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
 
 
 public class Program {
@@ -26,8 +28,19 @@ public class Program {
          * string util file util
          * NEW::::
          *  implemented method to get the list of Patients in the Patients Class
-         *  method to get the list of Doctors,
-         *  method to get list of all employees ( Doctors, Nurses, Service )
+         *  method to get list of all employees ( Doctors, Nurses, Service ) in Employees class
+         *  method that filters employees based on speciality
+         *  method that returns an employee with max/min salary
+         *  method that returns list of all employees grouped based on speciality
+         *  exceptions, enums
+         *  TODO:
+         *  functional interfacess
+         *  стоврити потоки двома способами
+         *  to do deadlock and functional interface
+         *  гонка потоків , коли обидва потоки чекають один одного , і програма заціклюється
+         *  життєві цикли мейвена
+         *
+         *
          */
 
 
@@ -63,34 +76,18 @@ public class Program {
 ////        familydoc2.examinePatient(patient1);
 ////        familydoc2.referToSurgeon(patient1, Diagnosis.APPENDECTOMY,surgeon1 );
 ////        familydoc2.work();
-//        List<Patient> listOfPatients = new ArrayList<>();
-//        listOfPatients.add(new Patient("Peter", 29, 10,
-//                "APPENDECTOMY", false, 456));
-//        listOfPatients.add(new Patient("Igor", 29, 10,
-//                "HEADACHE", true, 123));
-
-//
-//        List<Employee> listOfEmployees = new ArrayList<>();
-//        listOfEmployees.add(new DoctorFamily("Bob Johnson",49, 8736, 3,
-//                765, 10));
-//        listOfEmployees.add(new OperationalNurse("Clara", 25, 873, 3,
-//                                                                    450, "test",
-//                                                                        20, Specialty.NURSE));
-//
-//        listOfEmployees.add(new ServiceSecurity("Ken", 25, 478, 39, 35,
-//                "security"));
 
 
 
-//        getListOfPatients(listOfPatients);
-//
-//        getListOfDoctors(listOfDoctors);
 
-//        getListOfEmployees(listOfEmployees);
+
+        //getting list of patients and printing it
+        List<Patient> patients = Patient.getListPatients();
+        Patient.printPatients(patients);
 
         //returns list of ALL employees
         List<Employee> employees = Employee.getListEmployees();
-        //Employee.printEmployees(employees);
+        Employee.printEmployees(employees);
 
         //returns list of Employees based on Specialty ( Doctor )
         List<Employee> doctors = Employee.filterBySpecialty(employees, Specialty.DOCTOR);
@@ -113,6 +110,12 @@ public class Program {
         Map<Specialty, List<Employee>> groupedBySpecialty = Employee.groupBySpecialty(employees);
         System.out.println(groupedBySpecialty);
 
+        Ward ward1 = new Ward(25, 3, 7, 2, 4);
+
+        ServiceCleaning cleaner1 = new ServiceCleaning("Clara", 25, 2,
+                10, "Cleaning"
+                ,Specialty.SERVICE);
+        cleaner1.clean(ward1);
 
 
 
@@ -131,7 +134,12 @@ public class Program {
 
 
 
-        
+
+
+
+
+
+
 
 
 

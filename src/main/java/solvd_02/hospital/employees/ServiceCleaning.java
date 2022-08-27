@@ -3,6 +3,8 @@ package solvd_02.hospital.employees;
 import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.exceptions.InvalidAgeException;
 import solvd_02.hospital.exceptions.InvalidYearsWorkedException;
+import solvd_02.hospital.rooms.Room;
+import solvd_02.hospital.rooms.Ward;
 
 public class ServiceCleaning extends Service{
 
@@ -16,10 +18,12 @@ public class ServiceCleaning extends Service{
 
     @Override
     public void work() {
-        System.out.println("ServiceCleaning works");
+        System.out.println("ServiceCleaning works" );
     }
 
-    public void clean(){
-        //to implement
+    public void clean(Room room){
+        System.out.println("Cleaning Service cleans" + room);
     }
+
+
 }

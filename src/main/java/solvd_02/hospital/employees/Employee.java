@@ -47,6 +47,7 @@ public abstract class Employee extends Person {
             try {
                 throw new InvalidYearsWorkedException("years worked can't be 0 or lower");
             } catch (InvalidYearsWorkedException e) {
+                LOGGER.error("invalid number of years was entered");
                 e.printStackTrace();
             }
         } else {
@@ -63,6 +64,7 @@ public abstract class Employee extends Person {
             try {
                 throw new InvalidSalaryException("Salary can't be a negative value. Please enter valid value");
             } catch (InvalidSalaryException e) {
+                LOGGER.error("invalid salary was entered");
                 e.printStackTrace();
             }
         }
@@ -99,6 +101,7 @@ public abstract class Employee extends Person {
                         "testDepartemnt", 8, Specialty.NURSE),
                 new ServiceSecurity("Ken", 25, 3, 25, "security",
                          Specialty.SERVICE)
+
         );
     }
 

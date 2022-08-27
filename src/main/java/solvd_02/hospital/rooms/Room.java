@@ -46,4 +46,12 @@ public abstract class Room {
     public void setFloor(int floor) {
         this.floor = floor;
     }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "square=" + square +
+                ", floor=" + floor +
+                '}';
+    }
 }

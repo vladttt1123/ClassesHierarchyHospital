@@ -5,11 +5,12 @@ import org.apache.logging.log4j.Logger;
 import solvd_02.hospital.exceptions.InvalidAgeException;
 import solvd_02.hospital.exceptions.InvalidPatientIdException;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 
 public class Patient extends Person {
-    protected static Logger logger = LogManager.getLogger(Patient.class);
+    protected static Logger LOGGER = LogManager.getLogger(Patient.class);
     //class Data get time form the start of illness
 
     private int treatmentLength;
@@ -59,6 +60,7 @@ public class Patient extends Person {
             try {
                 throw new InvalidPatientIdException("Patiend Id must be greate than 0");
             } catch (InvalidPatientIdException e) {
+                LOGGER.error("invalid Patient ID was entered");
                 e.printStackTrace();
 
             }
@@ -79,10 +81,31 @@ public class Patient extends Person {
                 '}';
     }
 
-    public static void getListOfPatients(List<Patient> list){
-        for (Patient patient: list) {
-            System.out.println(patient);
-        }
+
+    public static List<Patient> getListPatients() {
+        return List.of(
+
+                new Patient("Carl Peterson", 25, 10, "Headache",
+                        false, 456),
+                new Patient("Wendy Bernson", 41, 20, "Appendectomy",
+                        true, 673)
+        );
 
     }
+    //method that will output list of employees
+    public static void printPatients(List<Patient> patients){
+        patients.forEach(System.out::println);
+    }
+
+
+
+//    public static void getListOfPatients(List<Patient> list){
+//        for (Patient patient: list) {
+//            System.out.println(patient);
+//        }
+
+
+
+
+
 }
