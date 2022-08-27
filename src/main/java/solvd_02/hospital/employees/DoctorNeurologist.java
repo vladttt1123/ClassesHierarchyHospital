@@ -1,9 +1,13 @@
 package solvd_02.hospital.employees;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import solvd_02.hospital.enums.Diagnosis;
 import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.interfaces.IExaminePatient;
 
 public class DoctorNeurologist extends Doctor implements IExaminePatient {
+    private static Logger logger = LogManager.getLogger(DoctorNeurologist.class);
 
     public DoctorNeurologist(String name, int age, int yearsWorked, double salaryHourly,
                              int numberOfPatients, Specialty specialty)
@@ -13,12 +17,18 @@ public class DoctorNeurologist extends Doctor implements IExaminePatient {
 
     @Override
     public void work() {
-        System.out.println("DoctorNeurologist works");
+        logger.info("DoctorNeurologist works");
     }
 
 
-    public void performMRI(Patient patient){
-        System.out.println("Performing MRI on" + patient.getName());
+    public void performMRI(Patient patient, Diagnosis diagnosis){
+        if (diagnosis == Diagnosis.STROKE){
+            logger.info("Performing MRI on" + patient.getName());
+        }
+        else{
+            logger.info(patient.getName() + " does not need MRI");
+        }
+
     }
 
     @Override

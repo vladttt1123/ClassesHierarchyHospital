@@ -1,8 +1,16 @@
 package solvd_02.hospital.employees;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import solvd_02.hospital.enums.Diagnosis;
+import solvd_02.hospital.enums.Drugs;
 import solvd_02.hospital.enums.Specialty;
 
+
+import static solvd_02.hospital.enums.Diagnosis.HEADACHE;
+
 public abstract class Nurse extends  Employee{
+
     private String departmentName;
 
     public Nurse(String name, int age, int yearsWorked, double salaryHourly, String departmentName,
@@ -21,7 +29,7 @@ public abstract class Nurse extends  Employee{
     }
 
 
-    public void givePillsToThePatient(Patient patient) {
+    public void givePillsToThePatient(Patient patient, Diagnosis diagnosis, Drugs drugs) {
 
     }
 

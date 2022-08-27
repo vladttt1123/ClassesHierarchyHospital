@@ -1,9 +1,14 @@
 package solvd_02.hospital.employees;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import solvd_02.hospital.enums.Diagnosis;
+import solvd_02.hospital.enums.Drugs;
 import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.interfaces.IExaminePatient;
 
 public class OperationalNurse extends Nurse implements IExaminePatient {
+    private static Logger logger = LogManager.getLogger(NurseManager.class);
 
     //make the lsit of patients
 
@@ -39,12 +44,16 @@ public class OperationalNurse extends Nurse implements IExaminePatient {
 
     @Override
     public void work() {
-        System.out.println("Operational Nurse is working ");
+        logger.info("Operational Nurse is working ");
     }
 
 
     @Override
     public void examinePatient(Patient patient) {
-        System.out.println("Patient "+ patient.getName() + " is being examined by Operational Nurse ");
+        logger.info("Patient "+ patient.getName() + " is being examined by Operational Nurse ");
     }
+
+
+
+
 }

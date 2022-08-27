@@ -5,16 +5,16 @@ import org.apache.logging.log4j.Logger;
 import solvd_02.hospital.exceptions.InvalidAgeException;
 
 public abstract class Person {
-    private static Logger LOGGER = LogManager.getLogger(Person.class);
+    private static Logger logger = LogManager.getLogger(Person.class);
 
 
     private String name;
     private int age;
 
     public Person(String name, int age){
-        LOGGER.info("Your name is " + name);
+        logger.info("Your name is " + name);
         this.name = name;
-        LOGGER.info("Your age is " + age);
+        logger.info("Your age is " + age);
         this.setAge(age);
     }
 

@@ -5,11 +5,13 @@ import solvd_02.hospital.enums.Diagnosis;
 import static solvd_02.hospital.enums.Diagnosis.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import solvd_02.hospital.enums.Drugs;
 import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.interfaces.IExaminePatient;
+import solvd_02.hospital.interfaces.IPrescribeDrugs;
 
 
-public class DoctorFamily extends Doctor implements IExaminePatient {
+public class DoctorFamily extends Doctor implements IExaminePatient, IPrescribeDrugs {
     private static Logger logger = LogManager.getLogger(DoctorFamily.class);
 
 
@@ -30,11 +32,17 @@ public class DoctorFamily extends Doctor implements IExaminePatient {
         logger.info("The name of the patient being referred is " + patient.getName());
         if(diagnosis == APPENDECTOMY){
             logger.info("The Diagnosis is Appendectomy ");
-            surgeon.operate(patient);
+            surgeon.operate(patient, APPENDECTOMY);
             logger.info("The patient will be operated by " + surgeon.getName());
+        }
+        else{
+            logger.info("The current diagnosies doesn't require Surgeon interference");
         }
 
     }
+
+
+
 
 
     @Override
@@ -48,4 +56,30 @@ public class DoctorFamily extends Doctor implements IExaminePatient {
                 "salaryHourly " + getSalaryHourly() +
                 " number of patients= " + getNumberOfPatients() + " }";
     }
+
+    @Override
+    public Drugs prescribeDrugs(Diagnosis diagnosis) {
+        if(diagnosis == HEADACHE){
+            logger.info("Paracetamol is prescribed");
+            return Drugs.PARACETAMOL;
+        }
+        else if(diagnosis == DIARHEA){
+            logger.info("Loperamide is prescribed");
+            return Drugs.LOPERAMIDE;
+        }
+        else if(diagnosis == ALLERGIE){
+            logger.info("Loratadine is prescribed");
+            return Drugs.LORATADINE;
+        }
+        else if (diagnosis == FLU){
+            logger.info("Tamiflu is prescribed");
+            return Drugs.TAMIFLU;
+        }
+        else{
+            return Drugs.NODRUGS;
+        }
+
+
+    }
+
 }

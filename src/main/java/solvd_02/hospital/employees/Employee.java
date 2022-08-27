@@ -138,10 +138,6 @@ public abstract class Employee extends Person {
     }
 
 
-// The method belows seems to be deprecated, that's why method above was used
-//    public static void getListOfEmployees(List<Employee> list) {
-//        for (Employee employee : list) {
-//            System.out.println(employee);
-//        }
+
 //    }
 }

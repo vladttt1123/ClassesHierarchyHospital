@@ -1,10 +1,13 @@
 package solvd_02.hospital.employees;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.interfaces.IExaminePatient;
 import solvd_02.hospital.interfaces.IManageEmployees;
 
 public class NurseManager extends Nurse implements IManageEmployees, IExaminePatient {
+    private static Logger logger = LogManager.getLogger(NurseManager.class);
     // make the list of operational nurses
 
     private int managedNurses;
@@ -33,7 +36,7 @@ public class NurseManager extends Nurse implements IManageEmployees, IExaminePat
 
 
     public void askOperationalNurseToGivePills(OperationalNurse operationalNurse,Patient patient){
-        System.out.println(operationalNurse.getName() + "needs to give pills to,  "
+        logger.info(operationalNurse.getName() + "needs to give pills to,  "
               + patient.getName());
     }
 

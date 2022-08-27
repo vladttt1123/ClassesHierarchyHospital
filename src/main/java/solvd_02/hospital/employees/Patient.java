@@ -2,15 +2,12 @@ package solvd_02.hospital.employees;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import solvd_02.hospital.exceptions.InvalidAgeException;
 import solvd_02.hospital.exceptions.InvalidPatientIdException;
 
-import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 
 public class Patient extends Person {
-    protected static Logger LOGGER = LogManager.getLogger(Patient.class);
+    protected static Logger logger = LogManager.getLogger(Patient.class);
     //class Data get time form the start of illness
 
     private int treatmentLength;
@@ -60,7 +57,7 @@ public class Patient extends Person {
             try {
                 throw new InvalidPatientIdException("Patiend Id must be greate than 0");
             } catch (InvalidPatientIdException e) {
-                LOGGER.error("invalid Patient ID was entered");
+                logger.error("invalid Patient ID was entered");
                 e.printStackTrace();
 
             }

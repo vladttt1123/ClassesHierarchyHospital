@@ -19390,3 +19390,8 @@
 [INFO ] 2022-08-27 17:03:02.996 [Thread1] Deadlock - Thread1 start 
 [INFO ] 2022-08-27 17:06:00.274 [Thread1] Deadlock - Thread1 start 
 [INFO ] 2022-08-27 17:06:00.277 [Thread1] Deadlock - Thread1 end 
+[INFO ] 2022-08-27 20:56:10.705 [main] Person - Your name is Bob
+[INFO ] 2022-08-27 20:56:10.711 [main] Person - Your age is 25
+[INFO ] 2022-08-27 20:56:10.711 [main] Employee - Your total work experience is 2
+[INFO ] 2022-08-27 20:56:10.716 [main] Employee - you pay per hours is 250.0
+[INFO ] 2022-08-27 20:56:10.717 [main] DoctorFamily - Loperamide is prescribed

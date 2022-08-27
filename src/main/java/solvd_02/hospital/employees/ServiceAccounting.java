@@ -1,11 +1,14 @@
 package solvd_02.hospital.employees;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.exceptions.InvalidAgeException;
 import solvd_02.hospital.exceptions.InvalidSalaryException;
 import solvd_02.hospital.exceptions.InvalidYearsWorkedException;
 
 public class ServiceAccounting extends Service{
+    private static Logger logger = LogManager.getLogger(ServiceAccounting.class);
 
 
     public ServiceAccounting(String name, int age, int yearsWorked, double salaryHourly,
@@ -18,7 +21,7 @@ public class ServiceAccounting extends Service{
 
     @Override
     public void work() {
-        System.out.println("ServiceAccounting works");
+        logger.info("ServiceAccounting is  working");
     }
 
 
@@ -32,6 +35,6 @@ public class ServiceAccounting extends Service{
             return totalSalary;
 
         }
-        //to implement
+
     }
 }
