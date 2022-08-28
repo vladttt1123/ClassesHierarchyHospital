@@ -5,8 +5,5 @@ public class InvalidYearsWorkedException extends IllegalArgumentException{
         super(msg);
     }
 
-//    public InvalidYearsWorkedException(Exception cause) {
-//        super(cause);
-//    }
 
 }

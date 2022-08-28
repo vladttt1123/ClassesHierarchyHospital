@@ -3,16 +3,14 @@ package solvd_02.hospital.employees;
 import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.exceptions.InvalidNumberOfPatientsException;
 
-import java.util.List;
-
 // all enums to separate folder
-public abstract class Doctor extends  Employee {
+public abstract class Doctor extends Employee {
 
     private int numberOfPatients;
 
     public Doctor(String name, int age, int yearsWorked, double salaryHourly, int numberOfPatients,
                   Specialty specialty) {
-        super(name, age, yearsWorked, salaryHourly,specialty);
+        super(name, age, yearsWorked, salaryHourly, specialty);
         this.setNumberOfPatients(numberOfPatients);
     }
 
@@ -40,7 +38,6 @@ public abstract class Doctor extends  Employee {
     }
 
 
-
-    }
+}
 
 

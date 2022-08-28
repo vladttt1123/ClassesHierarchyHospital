@@ -5,18 +5,19 @@ import org.apache.logging.log4j.Logger;
 
 public class Log4J {
 
-    private static Logger logger = LogManager.getLogger(Log4J.class);
+    private static Logger LOGGER = LogManager.getLogger(Log4J.class);
+
     private static void main(String[] args) {
 
-        System.out.println("Hello World");
+        LOGGER.info("Hello World");
 
-        logger.info("This is information message");
-        logger.error("This is an error message");
-        logger.warn("This is a warning message");
-        logger.fatal("This is fatal  error message");
+        LOGGER.info("This is information message");
+        LOGGER.error("This is an error message");
+        LOGGER.warn("This is a warning message");
+        LOGGER.fatal("This is fatal  error message");
 
-        System.out.println("Completed");
-        System.out.println("Completed");
+        LOGGER.info("Completed");
+        LOGGER.info("Completed");
 
     }
 }

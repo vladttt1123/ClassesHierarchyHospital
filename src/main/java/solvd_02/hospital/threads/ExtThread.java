@@ -1,5 +1,8 @@
 package solvd_02.hospital.threads;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * Creating Thread by extending Thread
  * Step 1. Refer to the class Thread
@@ -9,14 +12,16 @@ package solvd_02.hospital.threads;
  * Step 5. when methon run() worked, the thread stops working
  */
 public class ExtThread extends Thread {
+    private static Logger LOGGER = LogManager.getLogger(ExtThread.class);
+
     public static void main(String[] args) {
-        System.out.println(Thread.currentThread().getName()); // --checking if MAIN Thread started
-        Thread t1 = new Thread(new ExtThread() );
+        LOGGER.info(Thread.currentThread().getName()); // --checking if MAIN Thread started
+        Thread t1 = new Thread(new ExtThread());
         t1.start(); // start implictly calls method run
     }
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName());
+        LOGGER.info(Thread.currentThread().getName());
     }
 }

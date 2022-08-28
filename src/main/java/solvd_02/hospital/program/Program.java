@@ -4,12 +4,6 @@ import solvd_02.hospital.employees.DoctorFamily;
 import solvd_02.hospital.enums.Diagnosis;
 import solvd_02.hospital.enums.Specialty;
 import solvd_02.hospital.exceptions.InvalidSalaryException;
-import solvd_02.hospital.rooms.Ward;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
 
 
 public class Program {
@@ -19,11 +13,6 @@ public class Program {
         // when I print the familydoc1, why is it only showing unique values ?
         // how to throw an exception in case i want to check not only for negative value
         // but also for data type like String
-
-
-
-
-
 
 
 //        Patient patient1 = new Patient("John", 18, 3,"headache",
@@ -36,12 +25,9 @@ public class Program {
 //        DoctorHead doc1 = new DoctorHead("Bob", 25, 5643, 25, 15,
 
         DoctorFamily familydoc1 = new DoctorFamily(
-                "Bob",25, 2, 250, 100, Specialty.DOCTOR
+                "Bob", 25, 2, 250, 100, Specialty.DOCTOR
         );
         familydoc1.prescribeDrugs(Diagnosis.DIARHEA);
-
-
-
 
 
 //
@@ -82,44 +68,8 @@ public class Program {
 //        cleaner1.clean(ward1);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //        System.out.println(familydoc1);
 //        System.out.println(familydoc2);
-
-
-
-
-
-
-
-
-
-
 
 
     }

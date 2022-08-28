@@ -5,7 +5,7 @@
 [INFO ] 2022-08-14 16:21:43.480 [main] Log4J - This is information message
 [INFO ] 2022-08-14 16:22:12.047 [main] Log4J - This is information message
 [INFO ] 2022-08-14 17:20:16.801 [main] Employee - Your jobid is 1
-[INFO ] 2022-08-14 17:20:16.803 [main] Employee - Your total work experience is -2
+[INFO ] 2022-08-14 17:20 [main] Employee - Your total work experience is -2
 [INFO ] 2022-08-14 17:20:16.806 [main] Employee - you pay per hours is 1000.0
 [INFO ] 2022-08-14 17:20:16.807 [main] Employee - Your jobid is 5
 [INFO ] 2022-08-14 17:20:16.807 [main] Employee - Your total work experience is 2
@@ -271,7 +271,7 @@
 [INFO ] 2022-08-20 19:07:35.039 [main] Employee - Your total work experience is 25
 [INFO ] 2022-08-20 19:07:35.040 [main] Employee - you pay per hours is 15.0
 [INFO ] 2022-08-20 19:07:35.047 [main] DoctorFamily - The name of the patient being referred is John
-[INFO ] 2022-08-20 19:07:35.047 [main] DoctorFamily - The Diagnosis is Appendectomy 
+[INFO ] 2022-08-20 19:07:35.047 [main] DoctorFamily - The Diagnosis is Appendectomy
 [INFO ] 2022-08-20 19:07:35.048 [main] DoctorFamily - The patient will be operated by Sergiy
 [INFO ] 2022-08-20 19:09:04.847 [main] Person - Your name is Alice
 [INFO ] 2022-08-20 19:09:04.850 [main] Person - Your age is 30
@@ -301,7 +301,7 @@
 [INFO ] 2022-08-20 19:09:04.857 [main] Employee - Your total work experience is 25
 [INFO ] 2022-08-20 19:09:04.857 [main] Employee - you pay per hours is 15.0
 [INFO ] 2022-08-20 19:09:04.865 [main] DoctorFamily - The name of the patient being referred is John
-[INFO ] 2022-08-20 19:09:04.865 [main] DoctorFamily - The Diagnosis is Appendectomy 
+[INFO ] 2022-08-20 19:09:04.865 [main] DoctorFamily - The Diagnosis is Appendectomy
 [INFO ] 2022-08-20 19:09:04.866 [main] DoctorFamily - The patient will be operated by Sergiy
 [INFO ] 2022-08-20 19:09:04.866 [main] DoctorFamily - Family doctor is working
 [INFO ] 2022-08-20 20:14:04.331 [main] Person - Your name is Igot
@@ -19382,16 +19382,18 @@
 [INFO ] 2022-08-23 19:33:10.648 [main] Employee - Your total work experience is 2
 [INFO ] 2022-08-23 19:33:10.648 [main] Employee - you pay per hours is 10.0
 [INFO ] 2022-08-23 19:33:10.648 [main] Person - Your name is Clara
-[INFO ] 2022-08-27 17:02:46.804 [Thread2] Deadlock - Thread2 start 
-[INFO ] 2022-08-27 17:02:46.804 [Thread1] Deadlock - Thread1 start 
-[INFO ] 2022-08-27 17:02:57.178 [Thread2] Deadlock - Thread2 start 
-[INFO ] 2022-08-27 17:02:57.178 [Thread1] Deadlock - Thread1 start 
-[INFO ] 2022-08-27 17:03:02.996 [Thread2] Deadlock - Thread2 start 
-[INFO ] 2022-08-27 17:03:02.996 [Thread1] Deadlock - Thread1 start 
-[INFO ] 2022-08-27 17:06:00.274 [Thread1] Deadlock - Thread1 start 
-[INFO ] 2022-08-27 17:06:00.277 [Thread1] Deadlock - Thread1 end 
+[INFO ] 2022-08-27 17:02:46.804 [Thread2] Deadlock - Thread2 start
+[INFO ] 2022-08-27 17:02:46.804 [Thread1] Deadlock - Thread1 start
+[INFO ] 2022-08-27 17:02:57.178 [Thread2] Deadlock - Thread2 start
+[INFO ] 2022-08-27 17:02:57.178 [Thread1] Deadlock - Thread1 start
+[INFO ] 2022-08-27 17:03:02.996 [Thread2] Deadlock - Thread2 start
+[INFO ] 2022-08-27 17:03:02.996 [Thread1] Deadlock - Thread1 start
+[INFO ] 2022-08-27 17:06:00.274 [Thread1] Deadlock - Thread1 start
+[INFO ] 2022-08-27 17:06:00.277 [Thread1] Deadlock - Thread1 end
 [INFO ] 2022-08-27 20:56:10.705 [main] Person - Your name is Bob
 [INFO ] 2022-08-27 20:56:10.711 [main] Person - Your age is 25
 [INFO ] 2022-08-27 20:56:10.711 [main] Employee - Your total work experience is 2
 [INFO ] 2022-08-27 20:56:10.716 [main] Employee - you pay per hours is 250.0
 [INFO ] 2022-08-27 20:56:10.717 [main] DoctorFamily - Loperamide is prescribed
+[INFO ] 2022-08-28 22:55:35.500 [Thread2] Deadlock - Thread2 start 
+[INFO ] 2022-08-28 22:55:35.500 [Thread1] Deadlock - Thread1 start 

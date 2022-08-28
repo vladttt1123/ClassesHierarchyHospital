@@ -5,16 +5,16 @@ import org.apache.logging.log4j.Logger;
 import solvd_02.hospital.exceptions.InvalidAgeException;
 
 public abstract class Person {
-    private static Logger logger = LogManager.getLogger(Person.class);
+    private static Logger LOGGER = LogManager.getLogger(Person.class);
 
 
     private String name;
     private int age;
 
-    public Person(String name, int age){
-        logger.info("Your name is " + name);
+    public Person(String name, int age) {
+        LOGGER.info("Your name is " + name);
         this.name = name;
-        logger.info("Your age is " + age);
+        LOGGER.info("Your age is " + age);
         this.setAge(age);
     }
 
@@ -31,28 +31,25 @@ public abstract class Person {
     }
 
     public void setAge(int age) {
-        if(age < 0){
+        if (age < 0) {
             try {
                 throw new InvalidAgeException("Age can't be negative value. Please enter a valid age");
             } catch (InvalidAgeException e) {
                 e.printStackTrace();
             }
-        }
-        else if (age == 0 ){
+        } else if (age == 0) {
             try {
                 throw new InvalidAgeException("Age can't be equal to zero. Please enter a valid age");
             } catch (InvalidAgeException e) {
                 e.printStackTrace();
             }
-        }
-        else if(age > 1 && age < 18){
+        } else if (age > 1 && age < 18) {
             try {
                 throw new InvalidAgeException("Must be 18 or greater");
             } catch (InvalidAgeException e) {
                 e.printStackTrace();
             }
-        }
-        else{
+        } else {
             this.age = age;
         }
 

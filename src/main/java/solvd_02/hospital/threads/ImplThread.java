@@ -1,13 +1,18 @@
 package solvd_02.hospital.threads;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * Creating Thread by implementing Runnable ( functional interface _
  */
-public class ImplThread implements Runnable{
-    public static void main(String[] args) {
-        System.out.println(Thread.currentThread().getName()); // --checking if MAIN Thread started
+public class ImplThread implements Runnable {
+    private static Logger LOGGER = LogManager.getLogger(ImplThread.class);
 
-        Thread t2 = new Thread( new ImplThread());
+    public static void main(String[] args) {
+        LOGGER.info(Thread.currentThread().getName()); // --checking if MAIN Thread started
+
+        Thread t2 = new Thread(new ImplThread());
 
         t2.start();
     }
@@ -15,6 +20,6 @@ public class ImplThread implements Runnable{
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName());
+        LOGGER.info(Thread.currentThread().getName());
     }
 }

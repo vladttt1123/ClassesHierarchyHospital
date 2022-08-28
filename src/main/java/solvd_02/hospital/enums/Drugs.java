@@ -8,8 +8,6 @@ public enum Drugs {
     NODRUGS("NO DRUGS");
 
 
-
-
     private String name;
 
     Drugs(String name) {
